@@ -308,6 +308,17 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\24Hour.Data\24Hour.Data.csproj">
+      <Project>{b8d4a149-fbeb-4c3d-8733-3321891b2990}</Project>
+      <Name>24Hour.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\24Hour.Models\24Hour.Models.csproj">
+      <Project>{6399bcce-7a69-4a6c-95ad-a0268c8106ab}</Project>
+      <Name>24Hour.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\24Hour.Services\24Hour.Services.csproj">
+      <Project>{8db50876-4b2a-41a2-85a4-19e6d0b236be}</Project>
+      <Name>24Hour.Services</Name>
+    </ProjectReference>
       <Project>{B8D4A149-FBEB-4C3D-8733-3321891B2990}</Project>
       <Name>24Hour.Data</Name>
     </ProjectReference>
