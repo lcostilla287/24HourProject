@@ -319,6 +319,9 @@
       <Project>{8db50876-4b2a-41a2-85a4-19e6d0b236be}</Project>
       <Name>24Hour.Services</Name>
     </ProjectReference>
+      <Project>{B8D4A149-FBEB-4C3D-8733-3321891B2990}</Project>
+      <Name>24Hour.Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
