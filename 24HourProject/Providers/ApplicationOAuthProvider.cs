@@ -10,6 +10,11 @@ using Microsoft.Owin.Security;
 using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.OAuth;
 using _24HourProject.Models;
+<<<<<<< HEAD
+using _24HourProject.Data;
+=======
+using _24Hour.Data;
+>>>>>>> 03db8f462558f9f37db9d74a2a3a42261e4df87d
 
 namespace _24HourProject.Providers
 {
