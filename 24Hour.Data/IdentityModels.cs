@@ -33,6 +33,10 @@ namespace _24Hour.Data
             return new ApplicationDbContext();
         }
         public DbSet<Note> Notes { get; set; }
+        /// <summary>
+        //random stuff here
+        /// </summary>
+        /// <param name="modelBuilder"></param>
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
