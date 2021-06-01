@@ -11,6 +11,7 @@ using Owin;
 using _24HourProject.Providers;
 using _24HourProject.Models;
 using _24Hour.Data;
+using _24HourProject.Data;
 
 namespace _24HourProject
 {
