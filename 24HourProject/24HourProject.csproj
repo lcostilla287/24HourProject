@@ -308,6 +308,10 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\24Hour.Data\24Hour.Data.csproj">
+      <Project>{B8D4A149-FBEB-4C3D-8733-3321891B2990}</Project>
+      <Name>24Hour.Data</Name>
+    </ProjectReference>
+
       <Project>{b8d4a149-fbeb-4c3d-8733-3321891b2990}</Project>
       <Name>24Hour.Data</Name>
     </ProjectReference>
