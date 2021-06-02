@@ -56,8 +56,6 @@ namespace _24Hour.Services
                                 }
                         );
                 return query.ToArray();
-
-
             }
         }
     }
