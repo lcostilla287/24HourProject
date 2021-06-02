@@ -207,6 +207,7 @@
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ReplyController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -311,7 +312,7 @@
       <Project>{B8D4A149-FBEB-4C3D-8733-3321891B2990}</Project>
       <Name>24Hour.Data</Name>
     </ProjectReference>
-	  <ProjectReference Include="..\24Hour.Data\24Hour.Data.csproj">
+    <ProjectReference Include="..\24Hour.Data\24Hour.Data.csproj">
       <Project>{b8d4a149-fbeb-4c3d-8733-3321891b2990}</Project>
       <Name>24Hour.Data</Name>
     </ProjectReference>
