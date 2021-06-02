@@ -34,5 +34,28 @@ namespace _24Hour.Services
                 return ctx.SaveChanges() == 1;
             }
         }
+
+        //get
+        public IEnumerable<PostDetail> GetAllPosts()
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var query =
+                    ctx
+                        .Post
+                        .Where(e => e.AuthorId == _userId)
+                        .Select(
+                            e =>
+                                new PostDetail
+                                {
+                                    PostId = e.PostId,
+                                    Title = e.Title,
+                                    Text = e.Text,
+                                    CommentId = e.CommentId
+                                }
+                        );
+                return query.ToArray();
+            }
+        }
     }
 }
