@@ -51,7 +51,6 @@ namespace _24Hour.Services
                                     PostId = e.PostId,
                                     Title = e.Title,
                                     Text = e.Text,
-                                    CommentId = e.CommentId
                                 }
                         );
                 return query.ToArray();

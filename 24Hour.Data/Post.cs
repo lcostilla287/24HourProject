@@ -18,10 +18,10 @@ namespace _24Hour.Data
         [Required]
         public string Text { get; set; }
 
-        [Required]
-        public int CommentId { get; set; }
-        [ForeignKey(nameof(CommentId))]
-        public virtual Comment Comment { get; set; }
+        //[ForeignKey(nameof(CommentId))]
+        //[Required]
+        //public int CommentId { get; set; }
+        public virtual List<Comment> Comment { get; set; } = new List<Comment>();
 
         [Required]
         public Guid AuthorId { get; set; }
