@@ -18,25 +18,26 @@ namespace _24HourProject.Controllers
             var commentService = new CommentService(userId);
             return commentService;
         }
-    }
 
-    public IHttpActionResult Get()
-    {
-        CommentService commentService = CreateCommentService();
-        var comments = commentService.GetComments();
-        return Ok(comments);
-    }
 
-    public IHttpActionResult Post(CommentCreate comment)
-    {
-        if (!ModelState.IsValid)
-            return BadRequest(ModelState);
+        public IHttpActionResult Get(int id)
+        {
+            CommentService commentService = CreateCommentService();
+            var comments = commentService.GetComments(id);
+            return Ok(comments);
+        }
 
-        var service = CreateCommentService();
+        public IHttpActionResult Post(CommentCreate comment)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
 
-        if (!service.CreateComment(comment))
-            return InternalServerError();
+            var service = CreateCommentService();
 
-        return Ok();
+            if (!service.CreateComment(comment))
+                return InternalServerError();
+
+            return Ok();
+        }
     }
 }
