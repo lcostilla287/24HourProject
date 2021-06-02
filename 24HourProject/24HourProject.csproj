@@ -8,7 +8,7 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{D07C0900-7107-4B67-8696-5B8D6238CB01}</ProjectGuid>
+    <ProjectGuid>{9425C065-08BD-4781-AAAD-8E571A7BE601}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -311,8 +311,9 @@
       <Project>{B8D4A149-FBEB-4C3D-8733-3321891B2990}</Project>
       <Name>24Hour.Data</Name>
     </ProjectReference>
+	  <ProjectReference Include="..\24Hour.Data\24Hour.Data.csproj">
 
-      <Project>{b8d4a149-fbeb-4c3d-8733-3321891b2990}</Project>
+		  <Project>{b8d4a149-fbeb-4c3d-8733-3321891b2990}</Project>
       <Name>24Hour.Data</Name>
     </ProjectReference>
     <ProjectReference Include="..\24Hour.Models\24Hour.Models.csproj">
