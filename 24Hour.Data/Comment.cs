@@ -11,16 +11,17 @@ namespace _24Hour.Data
     public class Comment
     {
         [Key]
-        public int Id { get; set; }
+        public int CommentId { get; set; }        
 
         [Required]
         public string Text { get; set; }
 
-        public Guid AuthorId { get; set; }
-
+        public Guid AuthorId { get; set; }        
+        
         [ForeignKey(nameof(Post))]
-        public int CommentId { get; set; }
-        public virtual Reply Reply { get; set; }
+        public int PostId { get; set; }
+        public Post Post { get; set; }
+        public virtual List<Reply> Reply { get; set; } = new List<Reply>();
 
     }
 }
