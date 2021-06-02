@@ -14,10 +14,9 @@ namespace _24Hour.Data
         [Required]
         public int ReplyId { get; set; }
         
-        [ForeignKey(nameof(Comment))]
         [Required]
         public int CommentId { get; set; }
-
+        [ForeignKey(nameof(CommentId))]
         public virtual Comment Comment { get; set; }
 
         [Required]
