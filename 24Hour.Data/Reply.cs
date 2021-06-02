@@ -12,7 +12,7 @@ namespace _24Hour.Data
     {
         [Key]
         [Required]
-        public int Id { get; set; }
+        public int ReplyId { get; set; }
         
         [ForeignKey(nameof(Comment))]
         [Required]
