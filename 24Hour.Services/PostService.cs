@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace _24Hour.Services
 {
-    class PostService
+    public class PostService
     {
         private readonly Guid _userId;
 

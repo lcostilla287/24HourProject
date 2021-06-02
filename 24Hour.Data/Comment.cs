@@ -16,11 +16,9 @@ namespace _24Hour.Data
         [Required]
         public string Text { get; set; }
 
-        [Required]
         public Guid AuthorId { get; set; }
 
         [ForeignKey(nameof(Post))]
-        [Required]
         public int CommentId { get; set; }
         public virtual Reply Reply { get; set; }
 
