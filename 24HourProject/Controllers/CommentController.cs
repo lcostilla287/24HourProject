@@ -26,7 +26,6 @@ namespace _24HourProject.Controllers
             var comments = commentService.GetComments(id);
             return Ok(comments);
         }
-
         public IHttpActionResult Post(CommentCreate comment)
         {
             if (!ModelState.IsValid)

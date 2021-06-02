@@ -21,6 +21,7 @@ namespace _24Hour.Data
         //[ForeignKey(nameof(CommentId))]
         //[Required]
         //public int CommentId { get; set; }
+
         public virtual List<Comment> Comment { get; set; } = new List<Comment>();
 
         [Required]
