@@ -18,9 +18,9 @@ namespace _24Hour.Data
         [Required]
         public string Text { get; set; }
 
-        
-        //public int CommentId { get; set; }
         //[ForeignKey(nameof(CommentId))]
+        //[Required]
+        //public int CommentId { get; set; }
 
         public virtual List<Comment> Comment { get; set; } = new List<Comment>();
 

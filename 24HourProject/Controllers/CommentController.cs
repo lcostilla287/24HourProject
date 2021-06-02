@@ -19,13 +19,13 @@ namespace _24HourProject.Controllers
             return commentService;
         }
 
+
         public IHttpActionResult Get(int id)
         {
             CommentService commentService = CreateCommentService();
             var comments = commentService.GetComments(id);
             return Ok(comments);
         }
-
         public IHttpActionResult Post(CommentCreate comment)
         {
             if (!ModelState.IsValid)

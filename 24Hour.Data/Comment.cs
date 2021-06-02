@@ -21,7 +21,8 @@ namespace _24Hour.Data
         [Required]
         public int PostId { get; set; }
         [ForeignKey(nameof(PostId))]
-        public Post Post { get; set; }
+
+        public virtual Post Post { get; set; }
 
         public virtual List<Reply> Reply { get; set; } = new List<Reply>();
 
