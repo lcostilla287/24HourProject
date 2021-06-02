@@ -13,7 +13,7 @@ namespace _24Hour.Models
         public string Title { get; set; }
 
         [Required]
-        [MaxLength(1000)]
+        [MaxLength(2000)]
         public string Text { get; set; }
     }
 }
