@@ -13,6 +13,7 @@ namespace _24Hour.Data
         [Key]
         public int Id { get; set; }
 
+        [Required]
         public string Text { get; set; }
 
         public Guid AuthorId { get; set; }
